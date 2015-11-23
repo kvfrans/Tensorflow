@@ -22,4 +22,4 @@ Train MNIST by representing images as an array of 784 RGB.
 Weights are a 784 x 10 matrix.
 The model output is just a matmul of the weights and input images.
 The cost is then softmax difference between the correct labels and the output.
-GradientDescent is then used to train, resulting in ~92% accuraccy.
+GradientDescent is then used to train, resulting in ~92% accuracy.
