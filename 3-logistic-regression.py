@@ -25,7 +25,7 @@ w = init_weights([784, 10]) # like in linear regression, we need a shared variab
 py_x = model(X, w)
 
 cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(py_x, Y)) # compute mean cross entropy (softmax is applied internally)
-train_op = tf.train.GradientDescentOptimizer(0.05).minimize(cost) # construct optimizer
+train_op = tf.train.GradientDescentOptimizer(0.01).minimize(cost) # construct optimizer
 predict_op = tf.argmax(py_x, 1) # at predict time, evaluate the argmax of the logistic regression
 
 sess = tf.Session()
