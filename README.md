@@ -14,7 +14,11 @@ Shows how to use `GradientDescentOptimizer.minimize`
 ###2-linear-bias
 Linear regression, but with a weight and bias.
 `GradientDescentOptimizer.minimize` apparently finds all variables to create gradients for automatically.
-use `gradients = optimizer.compute_gradients(lossfunction, <list of variables>)` to select vars manually.
+use
+    ```javascript
+    gradients = optimizer.compute_gradients(lossfunction, <list of variables>)
+    ```
+    to select vars manually.
 then `optimizer.apply_gradients(gradients)` to update the vars.
 
 ###3-logistic-regression
