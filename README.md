@@ -23,3 +23,7 @@ Weights are a 784 x 10 matrix.
 The model output is just a matmul of the weights and input images.
 The cost is then softmax difference between the correct labels and the output.
 GradientDescent is then used to train, resulting in ~92% accuracy.
+
+###4-neuralnet
+Train MNIST by using a hidden layer. It's the same as 3-logistic-regression, but with another layer of weights in between input and output.
+It's not modular, with the layers just being hard coded in as matrix multiplications in the model.
